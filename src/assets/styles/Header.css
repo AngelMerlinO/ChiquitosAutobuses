@@ -1,0 +1,28 @@
+header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4px;
+    background-color: #819A75;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    align-items:center;
+}
+.login-btn {
+    background-color: #F99417;
+    color: white;
+    width: 10%;
+    height: 25%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+  }
+  .text-btn-login{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 255, 255);
+  }

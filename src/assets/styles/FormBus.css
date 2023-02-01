@@ -1,0 +1,31 @@
+.div-bus{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+.form-bus-register{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-input{
+    font-family: 'Oswald', sans-serif;
+}
+.input-bus{
+    background: #ced0d0;
+    border-radius: 1px;
+    border: none;
+    width: 20%;
+    height: 30px;
+    margin: 10px;
+}
+.button-regist-bus{
+    background: #c09cdd;
+    border-radius: 15px;
+    border: none;
+    width: 10%;
+    height: 30px;
+    margin: 10px;
+}

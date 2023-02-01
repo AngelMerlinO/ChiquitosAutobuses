@@ -1,0 +1,67 @@
+.form-register{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+    align-items: center;
+}
+.text-input {
+font-family: 'Montserrat';
+}
+.container-uno-register{
+display: flex;
+flex-direction: column;
+}
+.container-dos-register{
+display: flex;
+flex-direction: column;
+}
+.container-tres-register{
+display: flex;
+flex-direction: column;
+}
+.container-cuatro-register{
+    display: flex;
+    flex-direction: column;
+    }
+
+.input-nombre{
+width: 300px;
+height: 50px;
+
+background: #ced0d0;
+border: none;
+border-radius: 15px;
+
+}
+.input-user-register{
+width: 300px;
+height: 50px;
+background: #ced0d0;
+border: none;
+border-radius: 15px;
+}
+.input-password-register{
+width: 300px;
+height: 50px;
+background: #ced0d0;
+border: none;
+border-radius: 15px;
+}
+.button-register{
+position: absolute;
+width: 10%;
+height: 7%;    
+top: 75%;
+background: #FEDEFF;
+border-radius: 20px;
+border: none;
+}
+.input-correo-register{
+width: 300px;
+height: 50px;
+background: #ced0d0;
+border: none;
+border-radius: 15px;
+}

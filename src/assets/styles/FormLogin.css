@@ -1,0 +1,49 @@
+.FormLogin{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+.img-login{
+    top: 0% auto;
+    width: 50px;
+}
+.input-user{
+position: absolute;
+width:35%;
+height: 8%;
+top: 30%;
+background: #ced0d0;
+border: none;
+border-radius: 15px;
+
+}
+.input-password{
+position: absolute;
+width:35%;
+height: 8%;
+top: 40%;
+background: #ced0d0;
+border-radius: 15px;
+border: none;
+}
+.button-login{
+position: relative;
+width: 20%;
+height: 20%;
+margin-top: 20%;
+background: #FEDEFF;
+border-radius: 20px;
+border: none;
+}
+.info-input{
+position: absolute;
+top: 60%;
+font-family: 'Montserrat';
+}
+.button-register{
+position: absolute;
+top: 70%;   
+}

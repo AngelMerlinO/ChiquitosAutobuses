@@ -1,0 +1,22 @@
+.divTextPrincipal{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    margin: 1%;
+    color: #75775E;
+}
+.divPrincipal{
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    font-family: 'Montserrat';
+}
+
+  
+  .login-btn:hover {
+    background-color: #bb7621;
+  }

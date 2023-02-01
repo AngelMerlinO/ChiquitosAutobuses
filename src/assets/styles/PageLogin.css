@@ -1,0 +1,13 @@
+.cont-login{
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+}
+
+.imgLogin{
+    border-radius: 30px;
+  
+   
+}
