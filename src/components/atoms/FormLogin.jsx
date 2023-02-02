@@ -1,9 +1,12 @@
 import {Link} from 'react-router-dom';
 import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Logo from '../../assets/img/loginicon.svg'
 import "../../assets/styles/FormLogin.css"
 function FormLogin() {
     const form = useRef();
+    const navigate =useNavigate();
+
     const handlerClick =(e) =>{
       e.preventDefault();
       const formData = new FormData(form.current);
@@ -20,7 +23,12 @@ function FormLogin() {
       }
       fetch(uri,options)
       .then((response)=>response.json())
-      .then((data)=> {alert(JSON.stringify(data))})
+      .then((data)=> {alert(JSON.stringify(data))
+        if(data.status){
+          navigate("/");
+      }
+      })
+      
     }
         
     return (

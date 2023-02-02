@@ -1,6 +1,8 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "../../assets/styles/FormBus.css";
 function FormBus() {
+  const navigate =useNavigate();
   const form = useRef();
   const handlerClick =(e) =>{
     e.preventDefault();
@@ -23,7 +25,12 @@ function FormBus() {
     }
     fetch(uri,options)
     .then((response)=>response.json())
-    .then((data)=> {alert(JSON.stringify(data))})
+    .then((data)=> {alert(JSON.stringify(data))
+      if(data.status){
+        navigate("/");
+    }
+    })
+  
   }
 
   return (

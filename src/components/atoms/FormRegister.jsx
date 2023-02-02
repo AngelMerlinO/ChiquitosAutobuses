@@ -3,6 +3,7 @@ import {useNavigate} from 'react-router-dom'
 import '../../assets/styles/FormRegister.css'
 function FormRegister() {
     const form = useRef();
+    const navigate =useNavigate();
     const handlerClick =(e) =>{
       e.preventDefault();
       const formData = new FormData(form.current);
@@ -20,7 +21,12 @@ function FormRegister() {
       }
       fetch(uri,options)
       .then((response)=>response.json())
-      .then((data)=> {alert(JSON.stringify(data))})
+      
+      .then((data)=> {alert(JSON.stringify(data)) 
+        if(data.status){
+            navigate("/");
+        }
+    })
     }
   
     return ( 
