@@ -3,8 +3,8 @@ import Card from "../molecules/Card";
 import '../../assets/styles/ListBus.css'
 function ListaBus() {
     const [message, setMessage]=useState([]);
-    const handlerClick =(e) =>{
-      e.preventDefault();
+    
+      function mifuncion(){
       let uri = 'http://34.225.239.102/api/autobus';
       let options ={
           method:'GET',
@@ -15,14 +15,11 @@ function ListaBus() {
       .then((response)=>response.json())
       .then((data)=> {setMessage(data.message)})
 
-    }
+      }
 
     return (
         <>
-        <div>
-            <button onClick={handlerClick}> Mostrar autobuses</button>
-        </div>
-        <div className="cont-cards-bus">
+        <div className="cont-cards-bus" onLoad={mifuncion()}>
             {
                 message.map(mensaje =>(<Card clave={mensaje.clave} placa={mensaje.placa}
                      asientos={mensaje.numasientos}fecha={mensaje.fecha} tipo={mensaje.tipo} 
