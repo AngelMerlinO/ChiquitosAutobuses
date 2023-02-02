@@ -1,5 +1,6 @@
 import {useState} from "react";
 import Card from "../molecules/Card";
+import '../../assets/styles/ListBus.css'
 function ListaBus() {
     const [message, setMessage]=useState([]);
     const handlerClick =(e) =>{
@@ -21,7 +22,7 @@ function ListaBus() {
         <div>
             <button onClick={handlerClick}> Mostrar autobuses</button>
         </div>
-        <div>
+        <div className="cont-cards-bus">
             {
                 message.map(mensaje =>(<Card clave={mensaje.clave} placa={mensaje.placa}
                      asientos={mensaje.numasientos}fecha={mensaje.fecha} tipo={mensaje.tipo} 
