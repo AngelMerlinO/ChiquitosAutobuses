@@ -1,4 +1,4 @@
-import Header from "../components/atoms/Header";
+import Header from "../components/molecules/Header";
 function ListProductos() {
     return ( 
         <>

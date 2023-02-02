@@ -1,6 +1,6 @@
 import FormRegister from "../components/atoms/FormRegister";
 import Title from "../components/atoms/Title";
-import Header from "../components/atoms/Header";
+import Header from "../components/molecules/Header";
 import "../assets/styles/PageRegister.css"
 function Register() {
     return ( 

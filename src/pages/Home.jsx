@@ -1,4 +1,4 @@
-import Header from "../components/atoms/Header";
+import Header from "../components/molecules/Header";
 import imgFondo from "../assets/img/cafeteria.svg"
 import "../assets/styles/Home.css"
 

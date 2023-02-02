@@ -1,4 +1,4 @@
-import Header from "../components/atoms/Header";
+import Header from "../components/molecules/Header";
 import FormBus from "../components/atoms/FormBus";
 function RegistroBus() {
     return (  
