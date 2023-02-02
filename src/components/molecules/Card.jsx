@@ -1,9 +1,16 @@
 import Span from "../atoms/Span";
-function Card({img,texto}) {
+import Imagen from "../atoms/Img";
+function Card({img,clave,placa,asientos,fecha,tipo,nombre,licencia}) {
     return (  
         <>
-        <img src={img} alt="" />
-        <Span info={texto}/>
+        <Imagen img={img}/>
+        <Span info={clave}/>
+        <Span info={placa}/>
+        <Span info={asientos}/>
+        <Span info={fecha}/>
+        <Span info={tipo}/>
+        <Span info={nombre}/>
+        <Span info={licencia}/>
         </>
     );
 }
