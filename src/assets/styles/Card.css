@@ -1,6 +1,6 @@
 .card-autobus{
     background: radial-gradient(#fbc1cc, #fa99b2);
-    color: black;
+    
     font-size: large;
     font-family: 'Oswald', sans-serif;
     margin: 30px;
@@ -10,5 +10,10 @@
     grid-template-rows: 20px 50px 1fr 50px;
     border-radius: 10px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-    transition: all 0.2s;
+    
+}
+.card-autobus p{
+    font-family: 'Oswald', sans-serif;  
+    font-size: x-large;
+    color:  rgb(255, 255, 255);
 }
