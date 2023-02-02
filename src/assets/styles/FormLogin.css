@@ -14,7 +14,7 @@
 position: absolute;
 width:35%;
 height: 8%;
-top: 30%;
+top: 40%;
 background: #ced0d0;
 border: none;
 border-radius: 15px;
@@ -24,7 +24,7 @@ border-radius: 15px;
 position: absolute;
 width:35%;
 height: 8%;
-top: 40%;
+top: 50%;
 background: #ced0d0;
 border-radius: 15px;
 border: none;
@@ -32,8 +32,8 @@ border: none;
 .button-login{
 position: relative;
 width: 20%;
-height: 20%;
-margin-top: 20%;
+height: 50px;
+margin-top: 10%;
 background: #FEDEFF;
 border-radius: 20px;
 border: none;

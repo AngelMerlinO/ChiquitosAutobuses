@@ -1,31 +1,37 @@
-import {useState} from 'react'
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import { useRef } from 'react';
 import Logo from '../../assets/img/loginicon.svg'
 import "../../assets/styles/FormLogin.css"
 function FormLogin() {
-    const [stateForm, setStateForm] = useState({username:'Merlin', password:''})
-    const handlerClick = (e) => {
-        e.preventDefault()
-        setDescription({msn: username})    
+    const form = useRef();
+    const handlerClick =(e) =>{
+      e.preventDefault();
+      const formData = new FormData(form.current);
+      
+      let uri = 'http://34.225.239.102/api/iniciar';
+      let options ={
+          method:'POST',
+                    headers:{ "Content-Type":'application/json'},
+                      body:JSON.stringify({
+          usuario: formData.get('usuario'),
+          contrasenia: formData.get('contrasena'),
+         
+        })
+      }
+      fetch(uri,options)
+      .then((response)=>response.json())
+      .then((data)=> {alert(JSON.stringify(data))})
     }
-    const handlerChange = (e) => {
-        console.log(stateForm.username)
-        setStateForm({...stateForm,username:"Manuel"})
-        console.log(stateForm.username)
-    }
-    const handlerChangePassword = (e) => {
-        setStateForm({...stateForm,password: e.target.value})
-    }
+        
     return (
-        <form className='FormLogin'>
+        <form className='FormLogin' ref={form}>
             <img src={Logo} alt="Logotipo" className='img-login' />
-            <input type="text" value={stateForm.username} onChange={handlerChange} className="input-user"/>
-            <input type="password" value ={stateForm.password} onChange={handlerChangePassword} className="input-password"/>
-            <button onClick={handlerClick} className="button-login">Iniciar sesión</button>
+            <p>usuario</p>
+            <input type="text"   className="input-user" name='usuario'/>
+            <p>contraseña</p>
+            <input type="password"  className="input-password" name='contrasena'/>
+            <button className="button-login" onClick={handlerClick}>Iniciar sesión</button>
             <Link to="/register" > Registrate</Link>
-{            <div className='info-input'>
-                <label >{JSON.stringify(stateForm)}</label>
-            </div>}
         </form>
       );
 }
